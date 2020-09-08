@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="images/favicon.png" rel="icon" />
+<title>Goldlane Invoice</title>
+<meta name="author" content="harnishdesign.net">
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+
+<style type="text/css">
+
+
+
+@media print {
+     .invoice-container {
+      max-width: 1100px;
+      padding-top: 100px;
+      padding-bottom: 200px;
+     
+     }
+     table {
+      margin-top: 30px;
+     -webkit-print-color-adjust: exact; 
+     }
+     .rg {
+      padding-right: 40px;
+     }
+
+    
+}
+  .main_sub_heading{
+    color:#D4D7ED;
+    font-weight: 500;
+    font-family: Poppins;
+  }
+
+  .main_heading {
+    color: #3B325F;
+    font-weight: 600;
+    font-family: Poppins;
+
+  }
+</style>
+</head>
+<body>
+
+<div class="container-fluid invoice-container"> 
+  <!-- Header -->
+  <header>
+    <div class="row align-items-center">
+      <div class="col-sm-7 col-6 text-center text-sm-left mb-3 mb-sm-0 pl-5"> <img width="120px;" id="logo" src="images/logo.svg" title="Koice" alt="Goldlane" /> 
+      </div>
+      <div class="col-sm-5 col-6 text-center text-sm-right pr-5">
+        <h4 class="mb-0" style="color: #3B325F; font-weight: 600; font-family: Poppins;">INVOICE</h4>
+       
+      </div>
+    </div>
+    
+  </header>
+  <!-- Main Content -->
+  <main class="mt-4">
+    <div class="row">
+      <div class="col-6 col-sm-6 order-sm-0 pl-5"> <strong class="main_sub_heading">Seller Details</strong>
+        <address class="main_heading">
+        MR. JOHN SMITHs<br />
+        #24, Shiv Colony, Narsinghpura<br />
+        Beawar Ajmer, rajasthan-305701<br />
+       
+        </address>
+      </div>
+      <div class="col-6 col-sm-6 text-sm-right order-sm-1 rg" style="padding-right: 65px;"> <strong class="main_sub_heading">Invoice No</strong>
+        <address class="main_heading">
+        INVOICE0001-2020<br />
+        </address>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-6 pl-5"> <strong class="main_sub_heading">Bought by</strong><br>
+        <address class="main_heading">
+        SMJ SOLUTIONS PRIVATE LIMITED<br />
+        4TH FLOOR, 80FT ROAD.<br />
+        NO.7 LORVEN WORKSPACE,<br />
+        7TH BLOCK, KORMANGALA,<br />
+        BANGALORE-560095<br />
+        GSTIN: 29AAYCS7583H1Z<br />
+        State Code: 29<br />
+        </address>
+        <br />
+      </div>
+      <div class="col-sm-6 col-6 text-sm-right rg" style="padding-right: 65px;"> 
+        <strong class="main_sub_heading">Invoice date</strong><br>
+        <span class="main_heading"> 05/12/2019<br>
+        <br>
+        </span>
+
+        <strong class="main_sub_heading">Order ID</strong><br>
+        <span class="main_heading">GOLDLANE001<br>
+        <br>
+        </span> 
+
+        <strong class="main_sub_heading">Delivery At</strong><br>
+        <span class="main_heading">Same as Bought By<br>
+        <br>
+        </span>
+      </div>
+      
+
+    </div>
+
+     <div class="table-responsive mt-3">
+      <table class="table">
+        <thead style="background-color: #3B325F; color: white;">
+          <tr style="border: none;">
+            <td class="text-center"><strong>DESCRIPTION</strong></td>
+            <td class="text-center"><strong>HSN</strong></td>
+            <td class="text-center"><strong>WEIGHT <br> (Gms)</strong></td>
+            <td class="text-center"><strong>RATE/GM <br>(Rs.)</strong></td>
+            <td class="text-center"><strong>SUBTOTAL <br>(Rs.)</strong></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center main_heading">From Title</td>
+            <td class="text-center main_heading">7108</td>
+            <td class="text-center main_heading">0.0003</td>
+            <td class="text-center main_heading">5000.34</td>
+            <td class="text-center main_heading">1.52</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+   <div class="row text-right " style="padding-right: 50px;">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 rg">
+      
+      
+      <p class="main_heading">IGST(3%)<span class="pl-5 main_heading">0.05</span> </p>
+      <p style="line-height: 0.1" class="main_heading">IGST(3%)<span class="pl-5 main_heading">0.05</span> </p>
+      <p class="main_heading">Round off<span class="pl-5 main_heading">-0.26</span> </p>
+      <div style="font-weight: 800;" id="res" class="mt-4"><p class="main_heading" style="font-weight: 800;">Total<span class="pl-5">&nbsp;&nbsp;&nbsp;1.31</span> </p></div>
+    
+      </div>
+  </div>
+
+  <div class="row text-right mt-5" style="padding-right: 50px;">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 color rg" style="line-height: 0.1; font-weight: 800">
+      <p class="main_heading"><b>FOR SUMAGALI JEWELLERS</b></p>
+      <p style="line-height: 0.1;" class="main_heading"><b>AUTHORIZED SIGNATORY</b></p>
+
+        
+      </div>
+  </div>
+   
+   <hr style="height:3px;border:none;color:#3B325F;background-color:#3B325F;" />
+
+
+
+
+
+  </main>
+  <!-- Footer -->
+  <footer class="text-center">
+    <p class="text-1 main_heading" style="text-align: justify;">Declaration: We declare that the above quantity of goods are kept by the seller in a safe vault on behalf of the buyer. It can be redeemed or delivered in minted product of manufacturer or can be exchanged to goldlane partnered stores as per the Terms and condtions agreed by the customer. The customer has to pay extra making charges and delivery charges applicable at the time of redemption. Terms & Condtions : All disputes are subject to Banglore Jurisdiction.  <p class="main_heading" style="text-align: center; font-size: 16px;"><b>E. & O.E.</b></p></div>
+
+  </footer>
+</div>
+
+</body>
+
+</html>
